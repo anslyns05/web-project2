@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* ===============================
-       Typing Effect (HOME page)
-    =============================== */
+    
     var welcomeText = document.querySelector(".welcome");
     if (welcomeText) {
         var message = welcomeText.textContent;
@@ -21,9 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, typingSpeed);
     }
 
-    /* ===============================
-       Floating Image (HOME page)
-    =============================== */
+    
     var image = document.querySelector(".home-img img");
     if (image) {
         var imgPosition = 0;
@@ -38,9 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 30);
     }
 
-    /* ===============================
-       Digital Clock
-    =============================== */
+    
     var clock = document.getElementById("clock");
     if (clock) {
         function updateClock() {
@@ -62,9 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* ===============================
-   About Me Typing Effect
-=============================== */
+
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -87,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function typeWriterList() {
 
-        // bila start item baru
+       
         if (charIndex === 0) {
             li = document.createElement("li");
             ul.appendChild(li);
@@ -98,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function () {
             charIndex++;
             setTimeout(typeWriterList, 20);
         } else {
-            // siap satu ayat → pergi next bullet
+           
             itemIndex++;
             charIndex = 0;
 
@@ -117,9 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-/* ===============================
-   Education Box Hover Effect
-=============================== */
+
 document.addEventListener("DOMContentLoaded", function () {
 
     var boxes = document.querySelectorAll(".education-box");
@@ -137,9 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-/* ===============================
-   Gallery Image Slider
-=============================== */
+
 document.addEventListener("DOMContentLoaded", function () {
 
     var currentIndex = 0;
@@ -151,15 +139,13 @@ document.addEventListener("DOMContentLoaded", function () {
         images[currentIndex].classList.add("active");
     }
 
-    // expose function supaya onclick boleh guna
+   
     window.changeImage = changeImage;
 
 });
 
 
-/* ===============================
-   Gallery Card Effects
-=============================== */
+
 document.addEventListener("DOMContentLoaded", function () {
 
     var cards = document.querySelectorAll(".gallery-card img");
@@ -187,3 +173,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }, index * 200);
     });
 });
+
